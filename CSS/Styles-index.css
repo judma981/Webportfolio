@@ -43,11 +43,12 @@ html{
 
 }
 p{
-    text-align: justify;
+    text-align: left;
     background-clip: text;
-    color: #ff0000;
+    color: #000000;
     font-size: 20px;
-    margin-left: 15px;   
+    margin-left: 125px;
+    margin-right: 120px;   
  }
 img {
    display: block; 
@@ -62,13 +63,13 @@ img {
  }
  .videoContainer{
   position: relative;
-  margin-left: 10px;
+  margin-left: 100px;
   display: inline-block;
   flex-direction: row;
   width: 40%;
   margin-right: 5%; 
   margin-bottom: 2%;
-  margin-left: 5%;
+  margin-left: 15%;
   }
   
  h2{
