@@ -42,6 +42,7 @@ html{
   }
 
 }
+
 p{
     text-align: left;
     background-clip: text;
@@ -91,4 +92,40 @@ img {
  .footer footer{
   text-align: center;
  }
- 
+ .listas-ordenadas{
+  padding: 10px;
+  border-radius: 10% / 50%;
+  margin: 10px;
+}
+.listas-ordenadas li{
+  text-align: center;
+  margin: 250px;
+}
+ .text-focus-in {
+	-webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	        animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+ @-webkit-keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
