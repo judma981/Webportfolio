@@ -22,13 +22,12 @@
 p{
     font-size: 1rem;
     font-family: fantasy; 
-    background: -webkit-linear-gradient(#0edaf5, #a613b9);
     background-clip: text;  
-    -webkit-text-fill-color: transparent;
+   
 }
 
 body{
-    background-color: rgb(168, 226, 236);
+    background-color: rgb(255, 255, 255);
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: 800;
 }
@@ -38,9 +37,16 @@ body{
     border: 2px solid black;    
     display: flex;
     flex-direction: row;
-    
-}
-  @media (max-width: 600px){
+        
+
+  }
+  .flex-container a{
+    color: rgb(0, 0, 0) !important;
+    font-size: 2rem;
+
+  }
+
+@media (max-width: 600px){
 
     .flex-container{
        
@@ -57,7 +63,6 @@ body{
 #listas-ordenadas{
     background-color: #f0f0f0;
     padding: 10px;
-    border: dotted;
     border-radius: 10% / 50%;
     margin: 10px;
   }
