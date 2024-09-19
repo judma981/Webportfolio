@@ -31,4 +31,14 @@ listaExperiencia.addEventListener('click', (event) => {
     detalles.style.display = detalles.style.display === 'block' ? 'none' : 'block';
   }
 });
+const listaEducacion = document.getElementById('Educacion');
+
+listaEducacion.addEventListener('click', (event) => {
+  const elementoClicK = event.target.closest('li'); 
+
+  if (elementoClicK) {
+    const detalles = elementoClicK.querySelector('.informacion');
+    detalles.style.display = detalles.style.display === 'block' ? 'none' : 'block';
+  }
+});
 

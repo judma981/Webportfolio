@@ -1,30 +1,45 @@
-*{  
+html{
     box-sizing: border-box;
-    margin: 15px;
-    padding: auto;
-  }
-  html{
-    font-size:62.5;
-    font-family:'Times New Roman', Times, serif ;
+    background-color: whitesmoke; 
+    font-family: 'Montserrat', sans-serif;
+
     
-  }
-
- .header{
-    border: 8px solid rgb(0, 0, 0);    
-    display: flexbox;
-    flex-direction: row;
-  }
-  .header a{
-    color: rgb(0, 0, 0) !important;
-    font-size: 2rem;
-
-  }
-p{
-    font-size: 1rem;
-    font-family: fantasy; 
-    background-clip: text;  
+ } 
+ 
+ .Header{    
+   background-color:rgb(170, 63, 63) !important;
+   position: fixed; 
+   height: auto;
+   padding: 10px ;
+   top: 0;
+   left: 0;
+   width: 100%;
+   display: flexbox;   
+   flex-direction: row;
+   text-align: right;
+   justify-content: space-between;
    
+    
+ }
+ 
+ .Header a{
+   display: inline-block;
+   padding: 10px 25px;
+   margin-left: auto;
+   text-decoration: none;
+   color:black ;
+   font-weight: bold;
+   background-clip: text;
+   
+   
+  }
+.Header a:hover{
+  background-color: #555;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
+
 
 body{
     background-color: rgb(255, 255, 255);
@@ -36,8 +51,8 @@ body{
     background-color: rgba(240, 255, 255, 0.842);   
     border: 2px solid black;    
     display: flex;
-    flex-direction: row;
-        
+    flex-direction: row;    
+    margin-right: auto;    
 
   }
   .flex-container a{
@@ -45,22 +60,8 @@ body{
     font-size: 2rem;
 
   }
-
-@media (max-width: 600px){
-
-    .flex-container{
-       
-      flex-direction: column;     
-      
-  }
-
-  }
-  .gradient{
-    background: -webkit-linear-gradient(#ff2525, #333);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-#listas-ordenadas{
+ 
+  #listas-ordenadas{
     background-color: #f0f0f0;
     padding: 10px;
     border-radius: 10% / 50%;
@@ -71,12 +72,38 @@ body{
     border: 5px solid black;
     box-shadow:black 5px 5px 8px ;
     font-size: 5rem;
-    text-align: center;
-    width: 100px;
-    min-width: 150px;
-    background: -webkit-linear-gradient(#f50b0b, #333);
+    text-align: center;    
+    min-width: 1%;
+    width: 100%;
+    background: -webkit-linear-gradient(#000000, #000000);
     background-clip: text;
     -webkit-text-fill-color: transparent;
   }
+  .flex-box iframe{
+    padding: 10px;  
+    margin: auto;
+  }
+  
+  h1{
+    text-align: center;
+  }
 
+  p{
+    text-align: center;
+  }
+@media (max-width: 600px){
+
+    .flex-container{
+       
+      flex-direction: column;     
+      
+  }
+  .flex-box iframe{
+    width: 250px;
+
+  }
+  
+
+
+}
  
