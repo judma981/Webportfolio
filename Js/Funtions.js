@@ -1,7 +1,7 @@
-const track = document.querySelector('.carousel-track');
+const track = document.querySelector('.carouseltrack');
 const slides = Array.from(track.children);
-const nextButton = document.querySelector('.carousel-next');
-const prevButton = document.querySelector('.carousel-prev');
+const nextButton = document.querySelector('.carousel_next');
+const prevButton = document.querySelector('.carousel_prev');
 const slideWidth = slides[0].getBoundingClientRect().width;
 
 let currentSlide = 0;
@@ -28,16 +28,6 @@ listaExperiencia.addEventListener('click', (event) => {
 
   if (elementoClicK) {
     const detalles = elementoClicK.querySelector('.detalles');
-    detalles.style.display = detalles.style.display === 'block' ? 'none' : 'block';
-  }
-});
-const listaEducacion = document.getElementById('Educacion');
-
-listaEducacion.addEventListener('click', (event) => {
-  const elementoClicK = event.target.closest('li'); 
-
-  if (elementoClicK) {
-    const detalles = elementoClicK.querySelector('.informacion');
     detalles.style.display = detalles.style.display === 'block' ? 'none' : 'block';
   }
 });
