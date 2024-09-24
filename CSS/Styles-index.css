@@ -39,57 +39,16 @@ html{
    
    
   }
-.Header a:hover{
+ .Header a:hover{
   background-color: #555;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-@media (max-width: 700px){
-
-  .Header{
-    
-    flex-direction: column;
-    
-  }
-  .Cuerpo{
-    width: 80%;
-    
-  }
-  
-  .videoContainer{
-    flex-direction: column;
-    align-items: center;
-  }
-  .footer{
-    flex-direction: column;
-    align-items: center;
-  }
-  #sobremi{
-    flex-direction: column;
-    align-items: center;
-    }
-  #sobremi h2{
-    flex-direction: column;
-    align-items: center;
-    margin: auto;
-
-  }
-  .carouselitem{
-    width: 50%;
-  }
-  .flexcontainer{
-     
-    flex-direction: column;     
-    
+.Header img{
+  height: 50%;
+  width: 60%;
 }
-.flexbox iframe{
-  width: 32%;
-
-} 
-
-}
-
 p{
     text-align: left;
     background-clip: text;
@@ -273,31 +232,20 @@ margin-bottom: 20px;
   width: 55%;
 }
 
-
-@media (max-width: 600px){
-
-  .flexcontainer{
-     
-    flex-direction: column;     
-    
-}
-  .flexbox iframe{
-    width: 250px;
-
-}  
-
-}
-
 .footer{
   background-color:rgb(170, 63, 63) !important;
-  color: black; 
-  height:auto;
-  padding:auto;
+  height: auto; 
   width: 100%;
+  display: flexbox;   
+  flex-direction: row;
+  text-align: right;
+  justify-content: space-between;
+  
  }
  .footer footer{
   text-align: center;
  }
+
  .gridcontainer {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
@@ -336,4 +284,40 @@ margin-bottom: 20px;
   color: #fff; 
   text-decoration: none;
   border-radius: 5px;
+}
+
+@media (max-width: 666px) {
+  .Header {
+    flex-direction: column; /* Stack header elements vertically */
+    align-items: center; /* Center header content */
+  }
+
+  .Header a {
+    margin: 10px 0; /* Add vertical margin to header links */
+  }
+
+  .videoContainer {
+    flex-direction: column;
+    align-items: center;
+    width: 90%; /* Adjust video container width */
+    margin: 20px auto; /* Center video container */
+  }
+
+  .carouselcontainer {
+    width: 90%; /* Adjust carousel container width */
+  }
+
+  .flexcontainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .flexbox iframe {
+    width: 90%; /* Adjust iframe width */
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: center;
+  }
 }
