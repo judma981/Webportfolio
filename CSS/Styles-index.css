@@ -3,6 +3,7 @@ html{
     background-color: whitesmoke; 
     font-family: 'Montserrat', sans-serif;    
  } 
+
  
  .Header{    
    background-color:rgb(170, 63, 63) !important;
@@ -288,23 +289,23 @@ margin-bottom: 20px;
 
 @media (max-width: 666px) {
   .Header {
-    flex-direction: column; /* Stack header elements vertically */
-    align-items: center; /* Center header content */
+    flex-direction: column; 
+    align-items: center; 
   }
 
   .Header a {
-    margin: 10px 0; /* Add vertical margin to header links */
+    margin: 10px 0;
   }
 
   .videoContainer {
     flex-direction: column;
     align-items: center;
-    width: 90%; /* Adjust video container width */
-    margin: 20px auto; /* Center video container */
+    width: 90%; 
+    margin: 20px auto; 
   }
 
   .carouselcontainer {
-    width: 90%; /* Adjust carousel container width */
+    width: 90%; 
   }
 
   .flexcontainer {
@@ -313,7 +314,7 @@ margin-bottom: 20px;
   }
 
   .flexbox iframe {
-    width: 90%; /* Adjust iframe width */
+    width: 90%; 
   }
 
   .footer {

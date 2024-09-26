@@ -32,3 +32,24 @@ listaExperiencia.addEventListener('click', (event) => {
   }
 });
 
+document.addEventListener('DOMContentLoaded', () => {
+  const toggleButton = document.getElementById('darkModeToggle');
+  const body = document.body;
+
+  
+  const prefersDarkMode = localStorage.getItem('darkMode') === 'enabled';
+  if (prefersDarkMode) {
+    body.classList.add('darkmode');
+  }
+
+  toggleButton.addEventListener('click', () => {
+    body.classList.toggle('darkmode');
+
+    
+    if (body.classList.contains('dark-mode')) {
+      localStorage.setItem('darkMode', 'enabled');
+    } else {
+      localStorage.setItem('darkMode', 'disabled');
+    }
+  });
+});
